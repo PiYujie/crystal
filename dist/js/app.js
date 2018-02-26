@@ -1,0 +1,1 @@
+require(["config"],function(){require(["jquery","cookie","swiper","banner","header","footer","home","bracelet","detail","shopcart","login"],function(i,n,e,t,r,o,c,a,u,f,h){t.init(),r.init(),o.init(),c.init(),a.init(),u.init(),f.init(),h.init()})});

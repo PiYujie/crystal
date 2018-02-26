@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<link rel="stylesheet" href="../css/layui.css" />
+	</head>
+	<body>
+		<div id="header"></div>	
+		
+		<div class="content">
+			<div class="cont">
+				<div class="cont_left">
+					<img src="../../img/login_bgpic.png"/>
+				</div>
+				<div class="cont_right">
+					<h3>会员登录 <span>注册就有好礼，<a href="Register.html">免费注册</a></span></h3>
+					<form id="login">
+						<h4>账号登录</h4>
+						<p><em>会员名：</em><input type="text" name="userName" id="userName" placeholder="会员名/邮箱/手机号" /><b></b></p>
+						<p><em>密码：</em><input type="password" name="passWord" id="passWord" placeholder="密码"/><i></i><a href="#">忘记密码？</a><b></b></p>
+						<input type="submit" value="登录" disabled="disabled"/><input type="checkbox" name="remember" id="remember"/><label for="remember">下次自动登录</label>
+					</form>
+					<p><b>第三方快捷登录</b></p>
+					<div class="friend_login">
+						<a href="#"><img src="../img/yang_sina.gif"/></a>
+						<a href="#"><img src="../img/yang_alipay.gif"/></a>
+						<a href="#"><img src="../img/yang_douban.png"/></a>
+						<a href="#"><img src="../img/yang_renren.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div id="footer"></div>
+	</body>
+</html>
+<script src="../../js/require.js" data-main="../../js/app" async defer="true"></script>

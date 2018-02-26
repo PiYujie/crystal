@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	</head>
+	<body>
+		<div id="header"></div>	
+		
+		<div class="content">
+			<div class="cont">
+				<div class="cont_left">
+					<h3>新会员注册 <span>已有水晶一百账号，<a href="Login.html">去登陆</a></span></h3>
+					<form>
+						<ul>
+							<li>* <em>会员名：</em><input type="text" name="userName" id="userNames" placeholder="会员名/邮箱/手机号" /><b></b></li>
+							<li>* <em>密码：</em><input type="password" name="passWords" id="passWord" placeholder="密码"/><i></i><b></b></li>
+							<li>
+								<p><span id="passtype1"></span><span id="passtype2"></span><span id="passtype3"></span></p>
+								<p><strong>弱</strong><strong>中</strong><strong>强</strong></p>
+							</li>
+							<li>* <em>确认密码：</em><input type="password" name="confirm_passWord" id="confirm_passWord"/><i></i><b>可以注册</b></li>
+							<li><label for="remember"><input type="checkbox" name="remember" id="remember"/>水晶一百《<em>会员注册协议</em>》</label></li>
+						</ul>
+						<input type="submit" value="同意并注册" disabled="disabled"/>
+					</form>
+				</div>
+				<div class="cont_right">
+					<p><b>第三方快捷登录</b></p>
+					<div class="friend_login">
+						<a href="#"><img src="../img/yang_sina.gif"/></a>
+						<a href="#"><img src="../img/yang_alipay.gif"/></a>
+						<a href="#"><img src="../img/yang_douban.png"/></a>
+						<a href="#"><img src="../img/yang_renren.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--底部-->
+		<div id="footer"></div>
+	</body>
+</html>
+<script src="../../js/require.js" data-main="../../js/app" async defer="true"></script>

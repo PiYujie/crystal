@@ -1,0 +1,279 @@
+@charset "UTF-8";
+h2 {
+  margin: 0;
+}
+
+input {
+  padding: 0;
+}
+
+input {
+  outline: none;
+}
+
+.logo {
+  display: none;
+}
+
+#nav {
+  display: none;
+}
+
+.cart_title {
+  height: 78px;
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.cart_title a {
+  float: left;
+  width: 172px;
+  height: 76px;
+  background: url(../img/sj_bg.png) 0 -618px no-repeat;
+}
+
+.cart_title span {
+  float: right;
+  background: url(../img/flow_step.png) 0 0 no-repeat;
+  width: 512px;
+  height: 44px;
+  margin-top: 30px;
+}
+
+.content {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.cont_title {
+  width: 100%;
+  height: 32px;
+  margin: 20px 0;
+}
+
+.cont_title h2 {
+  float: left;
+  height: 32px;
+  font: 24px/32px "微软雅黑";
+  color: #555;
+}
+
+.cont_title p {
+  height: 22px;
+  float: left;
+  margin: 10px 0 0 10px;
+  font: 12px/22px "微软雅黑";
+}
+
+.cont_title p em {
+  font-style: normal;
+  color: #c00;
+  font: 15px/22px "微软雅黑";
+}
+
+.cont {
+  border: 1px solid #ddd;
+}
+
+.cont p {
+  float: left;
+  width: 45%;
+}
+
+.cont strong {
+  float: left;
+  width: 9%;
+  border-left: 1px solid #fff;
+  font-weight: 500;
+}
+
+.cont b {
+  float: left;
+  width: 9%;
+  font-weight: 500;
+  border-left: 1px solid #fff;
+}
+
+.cont em {
+  float: left;
+  width: 15%;
+  font-style: normal;
+  border-left: 1px solid #fff;
+}
+
+.cont em button {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #8a8a8a;
+}
+
+.cont em button:first-of-type {
+  margin-left: 55px;
+}
+
+.cont em input {
+  float: left;
+  width: 45px;
+  height: 18px;
+  border: 0;
+  border-top: 1px solid #8a8a8a;
+  border-bottom: 1px solid #8a8a8a;
+  line-height: 18px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.cont i {
+  float: left;
+  width: 12%;
+  font-style: normal;
+  border-left: 1px solid #fff;
+}
+
+.cont a {
+  float: left;
+  width: 9%;
+  color: #676767;
+  border-left: 1px solid #fff;
+}
+
+.title {
+  width: 100%;
+  height: 35px;
+  font: 12px/35px "微软雅黑";
+  background: #eee;
+  color: #676767;
+  text-align: center;
+}
+
+.cont ul {
+  width: 100%;
+  background: #fefef4;
+}
+
+.cont ul li {
+  border-bottom: 1px solid #ddd;
+  height: 75px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.cont ul li p {
+  text-align: left;
+  line-height: 76px;
+}
+
+.cont ul li p a {
+  color: #333;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+}
+
+.cont ul li p a img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  padding: 1px;
+  border: 1px solid #ddd;
+  margin: 0 10px 0 15px;
+}
+
+.cont ul li b, .cont ul li i, .cont ul li a {
+  line-height: 76px;
+}
+
+.cont ul li em {
+  margin-top: 23px;
+}
+
+.cont ul li a:hover {
+  color: #f60;
+}
+
+.cont ul li strong {
+  height: 36px;
+  margin-top: 20px;
+}
+
+.cont ul li button {
+  cursor: pointer;
+}
+
+.settle {
+  width: 100%;
+  height: 44px;
+  padding: 20px 0;
+}
+
+.settle a {
+  float: left;
+  margin-left: 15px;
+  background: #EFEFEF;
+  border: 1px solid #c4c4c4;
+  -webkit-box-shadow: 0 1px 1px rgba(200, 200, 200, 0.3) inset;
+  -moz-box-shadow: 0 1px 1px rgba(200, 200, 200, 0.3) inset;
+  box-shadow: 0 1px 1px rgba(200, 200, 200, 0.3) inset;
+  color: #666;
+  text-shadow: 0 1px #fff;
+  padding: 5px 12px;
+  width: auto;
+  font-size: 12px;
+}
+
+.settle h4 {
+  float: right;
+  width: 245px;
+  text-align: right;
+  padding-right: 15px;
+  height: 44px;
+  font: 14px/44px "微软雅黑";
+  font-weight: 900;
+  border-bottom: 1px dashed #ddd;
+}
+
+.settle h4 b {
+  float: right;
+  width: auto;
+  color: #c00;
+  font-size: 20px;
+}
+
+.cont_foot {
+  width: 1190px;
+  margin: 20px auto;
+  height: 40px;
+  text-align: right;
+}
+
+.cont_foot a {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  text-shadow: 0 1px #fff;
+  font: 16px/38px "微软雅黑";
+  border-radius: 2px;
+}
+
+.return {
+  background: #EFEFEF;
+  border: 1px solid #C4C4C4;
+  -webkit-box-shadow: 0 1px 1px rgba(200, 200, 200, 0.3) inset;
+  -moz-box-shadow: 0 1px 1px rgba(200, 200, 200, 0.3) inset;
+  box-shadow: 0 1px 1px rgba(200, 200, 200, 0.3) inset;
+  color: #666;
+}
+
+.tonext {
+  background: #D81E27;
+  border: 1px solid #AF0911;
+  -webkit-box-shadow: 0 1px 1px rgba(100, 100, 100, 0.5) inset;
+  -moz-box-shadow: 0 1px 1px rgba(100, 100, 100, 0.5) inset;
+  box-shadow: 0 1px 1px rgba(100, 100, 100, 0.5) inset;
+  color: #FFF;
+}

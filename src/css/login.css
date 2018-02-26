@@ -1,0 +1,162 @@
+@charset "UTF-8";
+.logo {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.logo .logo_right {
+  display: none;
+}
+
+#nav {
+  display: none;
+}
+
+.content {
+  width: 100%;
+  height: 450px;
+  background: url(../img/login_bg.jpg) repeat-x;
+  margin-top: 20px;
+}
+
+.cont {
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.cont_left {
+  float: left;
+  width: 460px;
+  height: 370px;
+}
+
+.cont_right {
+  float: right;
+  width: 418px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 0 8px #ccc;
+  -moz-box-shadow: 0 0 8px #ccc;
+  box-shadow: 0 0 8px #ccc;
+}
+
+.cont_right h3 {
+  height: 62px;
+  width: 400px;
+  border-bottom: 1px solid #ccc;
+  padding: 0 9px;
+  font: 24px/62px "微软雅黑";
+  color: #555;
+}
+
+.cont_right h3 span {
+  float: right;
+  font: 12px/62px "微软雅黑";
+}
+
+.cont_right h3 span a {
+  font-weight: 600;
+  color: #333333;
+}
+
+.cont_right h3 span a:hover {
+  color: #f60;
+}
+
+.cont_right form {
+  padding: 15px 20px 20px 24px;
+}
+
+.cont_right form h4 {
+  height: 20px;
+  font: 14px/20px "微软雅黑";
+  color: #999;
+}
+
+.cont_right form p {
+  height: 34px;
+  font: 12px/34px "微软雅黑";
+  padding: 10px 0;
+  position: relative;
+}
+
+.cont_right form p em {
+  font-style: normal;
+  float: left;
+  width: 48px;
+}
+
+.cont_right form p input {
+  height: 16px;
+  padding: 8px;
+  width: 190px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 1px 3px rgba(200, 200, 200, 0.3);
+  -moz-box-shadow: 0 1px 3px rgba(200, 200, 200, 0.3);
+  box-shadow: 0 1px 3px rgba(200, 200, 200, 0.3);
+  margin-right: 10px;
+}
+
+.cont_right form p a {
+  color: #333;
+  margin-left: 10px;
+}
+
+.cont_right form p a:hover {
+  color: #f60;
+}
+
+.cont_right form p i {
+  display: inline-block;
+  background: url(../img/sj_bg.png) -92px -178px no-repeat;
+  width: 20px;
+  height: 13px;
+  margin-left: -32px;
+}
+
+.cont_right form p b {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(100, 100, 100, 0.3);
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  min-width: 15px;
+  padding-left: 5px;
+}
+
+.cont_right p {
+  height: 20px;
+  font: 12px/20px "微软雅黑";
+  padding-left: 24px;
+}
+
+.cont_right input[type="submit"] {
+  margin-left: 50px;
+  background: #D81E27;
+  border: 1px solid #AF0911;
+  -webkit-box-shadow: 0 1px 1px rgba(100, 100, 100, 0.5);
+  -moz-box-shadow: 0 1px 1px rgba(100, 100, 100, 0.5);
+  box-shadow: 0 1px 1px rgba(100, 100, 100, 0.5);
+  padding: 6px 20px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.cont_right input[type="checkbox"] {
+  margin: 20px 2px 0 30px;
+  vertical-align: -2px;
+}
+
+.cont_right label {
+  font-size: 12px;
+  color: #333;
+}
+
+.friend_login {
+  padding: 5px 20px 20px 24px;
+}

@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+# git ignore
+=======
+# git ignore 
+>>>>>>> f8019c672b5cda73c5c96b7828612878900fb937
+node_modules

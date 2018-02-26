@@ -1,0 +1,572 @@
+$width:1190px;
+$hoverColor:#f60;
+$borderColor:#ddd;
+$backColor:#F7F7F7;
+$full:100%;
+a{text-decoration: none;}
+a:hover{color: $hoverColor !important;}
+@mixin clearAll{
+    margin: 0;padding: 0;
+    background-color: #fff;
+    color: #333;
+    border: 0;
+}
+@mixin boxShadow($left,$top,$r,$color){
+    -webkit-box-shadow: $left $top $r $color;
+    -moz-box-shadow: $left $top $r $color;
+    box-shadow: $left $top $r $color;
+}
+//默认样式
+body{
+    font-size:12px;
+    color: #333;
+}
+ol{padding: 0;margin: 0;}
+//每日新品
+.brac_title1{
+    width: 1188px;
+    margin: 0 auto;
+    height: 30px;
+    font:14px/30px "微软雅黑";
+    border: 1px solid $borderColor;
+    background: $backColor;
+    border-radius: 2px;
+    color: $borderColor;
+    a{
+        padding: 0 8px;
+        color: #c00;
+    }
+}
+.brac_title2{
+    width: $width;
+    margin: 0 auto;
+    height: 50px;
+    font:bold  12px/50px "微软雅黑";
+    h5{margin: 0;}
+    a{
+        color: #646464;
+    }
+}
+//内容区
+.content{
+    width: $width;
+    margin: 0 auto;
+    overflow: hidden;zoom: 1;
+}
+//内容左
+.cont_left{
+    width: 210px;
+    float: left;
+}
+.brac_list{
+    width: 208px;
+    border: 1px solid $borderColor;
+    border-bottom: 0;
+    background: $backColor;
+    li{
+        width: 192px;
+        padding-left: 16px;
+        font:15px/34px "微软雅黑";
+        border-bottom: 1px solid $borderColor;
+        height: 34px;
+        a{
+            float: left;
+            color: #333;
+        }
+        i{
+            float: right;
+            width: 28px;
+            height: 34px;
+            background: url(../img/sj_bg.png) no-repeat -105px -145px;
+            border-left: 1px solid $borderColor;
+            cursor: pointer;
+        }
+    }
+}
+.brac_list ul{
+    @include clearAll;
+    width: 180px;
+    padding: 6px 6px 6px 22px;
+    border-bottom: 1px solid $borderColor;
+    background: #fff;
+    overflow: hidden;
+    li{
+        @include clearAll;
+        float: left;
+        width: 88px;
+        height: 24px;
+        color: #555;
+        border: 0;
+        a{
+            @include clearAll;
+            color: #666666;
+            padding: 0 4px;
+            font-size: 12px;
+            line-height: 24px;
+        }
+        a:hover{
+            color: #fff !important;
+            background: #C9033B;
+        }
+    }
+}
+.brac_list .strong{font-weight: 600;}
+//水晶吊坠热卖
+.brac_hot{
+    margin: 10px 0;
+    border: 1px solid $borderColor;
+    
+    h3{
+        height: 33px;
+        background-color: #F3F3F3;
+        font-size: 15px;
+        line-height: 33px;
+        padding-left: 15px;
+        border-bottom: 1px solid $borderColor;
+    }
+    div{
+        width: 194px;
+        padding: 2px 6px 6px 8px;
+        border-bottom: 1px dotted #ccc;
+        h4{
+            height: 18px;
+            span{
+                float: left;
+                width: 14px;height: 14px;
+                text-align: center;
+                font: 12px/14px "微软雅黑";
+                background: #f60;
+                margin: 1px 3px;
+                color: #fff;
+                border-radius: 2px;
+            }
+            a{
+                float: left;
+                width: 170px;
+                white-space: pre;
+                text-overflow: ellipsis;
+                overflow:hidden;
+                color: #333;
+                line-height: 18px;
+                font-weight: 500;
+            }
+        }
+        h5{
+            height: 80px;
+            padding-top: 4px;
+            a{
+                float: left;
+                width: 80px;
+                height: 80px;
+                overflow: hidden;
+            }
+            img{
+                width: $full;
+            }
+            p{
+                float: left;
+                padding-top: 5px;
+                padding-left: 15px;
+                font: bold 12px/18px "微软雅黑";
+                em,strong{
+                    display: block;
+                }
+                em{
+                    color: #c00;
+                    font-style: normal;
+                }
+                i{
+                    font-style: normal;color:$hoverColor;
+                }
+                strong{font-weight: 500;}
+            }
+        }
+    }
+    div:last-of-type{border-bottom: 0;}
+}
+
+//热门排行榜
+.brac_rank{
+    margin: 10px 0;
+    border: 1px solid $borderColor;
+    
+    h3{
+        height: 33px;
+        background-color: #F3F3F3;
+        font-size: 15px;
+        line-height: 33px;
+        padding-left: 15px;
+        border-bottom: 1px solid $borderColor;
+    }
+    ul{
+        width: 194px;
+        padding: 2px 6px 6px 8px;
+        border-bottom: 1px dotted #ccc;
+        li{
+            width: $full;
+            h4{
+                height: 18px;
+                span{
+                    float: left;
+                    width: 14px;height: 14px;
+                    text-align: center;
+                    font: 12px/14px "微软雅黑";
+                    background: #f60;
+                    margin: 1px 3px;
+                    color: #fff;
+                    border-radius: 2px;
+                }
+                a{
+                    float: left;
+                    color: #333;
+                    line-height: 18px;
+                    font-weight: 500;
+                }
+                b{
+                    float: right;
+                    color: #c00;
+                }
+            }
+            h5{
+                height: 80px;
+                padding-top: 4px;
+                a{
+                    float: left;
+                    width: 80px;
+                    height: 80px;
+                    overflow: hidden;
+                }
+                img{
+                    width: $full;
+                }
+                p{
+                    float: left;
+                    padding-top: 5px;
+                    padding-left: 15px;
+                    font: bold 12px/18px "微软雅黑";
+                    em,strong{
+                        display: block;
+                    }
+                    em{
+                        color: #c00;
+                        font-style: normal;
+                    }
+                    i{
+                        font-style: normal;color:$hoverColor;
+                    }
+                    strong{font-weight: 500;}
+                }
+            }
+        }
+    }
+}
+.hover_show{display: none;}
+//每日新品
+.everyNew{
+    margin: 10px 0;
+    border: 1px solid $borderColor;
+    
+    h3{
+        height: 33px;
+        background-color: #F3F3F3;
+        font-size: 15px;
+        line-height: 33px;
+        padding-left: 15px;
+        border-bottom: 1px solid $borderColor;
+    }
+    ul{
+        width: $full;
+        li{
+            padding: 12px 6px;
+            height: 89px;
+            border-bottom: 1px dotted #ccc;
+            a{
+                float: left;
+                width: 90px;
+                height: 90px;
+                overflow: hidden;
+            }
+            img{
+                width: $full;
+            }
+            p{
+                float: right;
+                width: 100px;height: 90px;
+                font:12px/16px "微软雅黑";
+                color: #333;
+                font-weight: 500;
+                strong{display: block;font-weight: 500;}
+                em{
+                    color: #c00;
+                    font-style: normal;
+                }
+                a{
+                    display: block;
+                    width: $full;
+                    height: auto;
+                    margin: 5px 0 4px 0;
+                    color: #333;
+                }
+            }
+        }
+        li:last-of-type{border: 0;}
+        li:hover{background: #f9f9f9;}
+    }
+}
+//内容右
+.cont_right{
+    width: 965px;
+    float: right;
+    
+}
+//介绍
+.introduce{
+    width: 963px;
+    border: 1px solid $borderColor;
+    h3{
+        width: $full;
+        background-color: #F3F3F3;
+        border-bottom: 1px solid $borderColor;
+        height: 34px;
+        a{
+            float: left;
+            font: 14px/34px "微软雅黑";
+            border-right: 1px solid $borderColor;
+            padding: 0 20px;
+            color: #666;
+        }
+    }
+}
+.intr_click{background-color: #fff;color: #c50B0B;}
+.intro{
+    width: 945px;height: 300px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    img{
+        width: 945px;
+        position: absolute;
+        top: 10px;
+        z-index: -1;
+    }
+}
+.intr_right{
+    float: right;
+    height: 300px;width: 250px;
+    background: #fff6e8;
+    color: #c45600;
+    h2{
+        font: 15px/28px "微软雅黑";
+        height: 28px;
+        margin: 5px 10px;
+        color: #C45600;
+        border-bottom: 1px solid #C45600;
+    }
+    p{
+        padding: 5px 10px 5px 12px;
+        font: 13px/20px "微软雅黑";
+    }
+}
+.intr_price{
+    width: 963px;
+    border: 1px solid $borderColor;
+    border-top: #000000;
+    margin: 20px 0;
+    ul{
+        width: 943px;
+        padding: 0 10px;
+        border-top: 2px solid #c10000;
+        li{
+            overflow: hidden;
+            border-top: 1px dotted #d7d6d5;
+            span{
+                float: left;
+                width: 100px;
+                color: #333333;
+                line-height: 16px;
+                padding: 10px 0;
+                text-align: right;
+            }
+            p{
+                float: left;
+                width: 803px;
+                padding: 10px 10px 10px 20px;
+                a{
+                    font: 12px/16px "微软雅黑";
+                    padding: 2px 3px;
+                    margin-right: 10px;
+                    margin-bottom: 2px;
+                    color: #565656;
+                }
+                a:hover{
+                    background: #b30000;
+                    color: #fff!important;
+                }
+            }
+        }
+    }
+}
+//商品信息显示
+.allmess{
+    width: $full;
+    margin-bottom: 90px;
+}
+//显示顺序
+.mess_title{
+    width: 963px;
+    border: 1px solid $borderColor;
+    background: #F9F9F9;
+    height: 34px;
+    ol{
+        float: left;
+        padding: 0 10px;
+        height: 34px;
+        color: #555;
+        line-height: 34px;
+        span{
+            float: left;
+        }
+        li{
+            float: left;
+            height: 34px;
+            a{
+                display: inline-block;
+                height: 34px;
+                background: url(../img/arrow.gif)no-repeat 38px -18px;
+                padding-left:10px;
+                padding-right: 20px;
+                color: #555;
+            }
+        }
+    }
+    p{
+        float: right;
+        height: 20px;
+        line-height: 20px;
+        padding: 7px 0;
+        span{
+            float: left;
+            border-right: 1px solid #e5e5e5;
+            padding-right: 10px;
+            color: #c00;
+        }
+        strong{
+            float: left;
+            margin: 0 10px;
+            b{
+                color: #c00;
+            }
+        }
+        a{
+            float: left;
+            color: #999;
+            background: #f9f9f9;
+            height: 20px;
+            padding: 0 5px;
+            border: 1px solid #DCDCDC;
+            margin-right: 10px;
+            i{
+                background: url(../img/icon_pointer.gif) no-repeat 0 0;
+                display: inline-block;
+                width: 6px;height: 9px;
+                margin-top: 5px;
+            }
+            
+        }
+        a:last-of-type i{background-position: -39px 0;}
+    }
+}
+//具体内容
+.allmess ul{
+    width: $full;
+    display: inline-block;
+    li{
+        float: left;
+        width: 233px;
+        margin:2px;
+        margin-left: 5px;
+        position: relative;
+        a{
+            display: block;
+            color: #333;
+            padding: 7px;
+            font-size: 13px;
+            height: 270px;
+            img{
+                display: block;
+                width: 220px;
+                height: 220px;
+                margin-bottom:7px;
+            }
+        }
+        em{
+            display: block;
+            text-align: center;
+            font-style: normal;
+            color: #c00;
+            margin-bottom: 5px;
+            del{
+                color: #9b9b9b;
+            }
+        }
+        p{
+            position: absolute;
+            z-index: 2;
+            display: none;
+            bottom: -73px;left: -2px;
+            width: 213px;
+            padding: 5px 10px 10px 10px;
+            background: $backColor;
+            color: #666;
+            text-align: center;
+            strong{
+                display: block;
+                font-weight: 500;
+                line-height: 22px;
+                i{
+                    font-style: normal;
+                    color: $hoverColor;
+                }
+            }
+            a{
+                display: inline-block;
+                height: auto;
+                border-radius: 2px;
+            }
+            a:first-of-type{
+                color: #fff;
+                background: #D81E27;
+                border: 1px solid #AF0911;
+                @include boxShadow(0,1px,1px,rgba(100,100,100,0.5));
+                text-shadow: 0 -1px #83000B;
+            }
+            a:first-of-type:hover{
+                color: #fff !important;
+                background: #E2232D;
+            }
+            a:last-of-type{
+                margin-left: 10px;
+                color: #666;
+                background: #EFEFEF;
+                border: 1px solid #C4C4C4;
+                @include boxShadow(0,1px,1px,rgba(200,200,200,0.3));
+                text-shadow: 0 1px #fff;
+            }
+            a:last-of-type:hover{
+                color: #666 !important;
+                background: #E5E5E5;
+            }
+        }
+    }
+    li:hover{
+        border:2px solid #FD2E60;
+        margin: 0 0 0 3px;
+//      margin-top: 0;
+//      margin-right: 0;
+    }
+    li:hover p{
+        display: block;
+        border:2px solid #FD2E60;
+        border-top: 1px solid #e2e2e2;
+    }
+}

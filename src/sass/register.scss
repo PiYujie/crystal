@@ -1,0 +1,179 @@
+$width:980px;
+$hoverColor:#f60;
+$colorRed:#f00;
+$full:100%;
+input{outline: none;}
+@mixin clearAll{
+    margin: 0;padding: 0;
+    background-color: #fff;
+    color: #333;
+    border: 0;
+}
+@mixin boxShadow($left,$top,$r,$color){
+    -webkit-box-shadow: $left $top $r $color inset;
+    -moz-box-shadow: $left $top $r $color inset;
+    box-shadow: $left $top $r $color inset;
+}
+//登录页面隐藏导航和搜索
+.logo{width: $width;margin: 0 auto;}
+.logo .logo_right{display: none;}
+#nav{display: none;}
+
+//内容区
+.content{
+    width: $full;
+    background: url(../img/login_bg.jpg) repeat-x;
+    margin-top: 20px;
+}
+.cont{
+    width: $width;height: 500px;
+    margin: 0 auto;
+    overflow: hidden;zoom: 1;
+}
+.cont_right{
+    float: right;
+    width: 530px;height: 460px;
+    background: url(../img/reg_bgpic.png) no-repeat 30px 0;
+    p{
+        width: 100px;height: 16px;
+        padding-top: 350px;
+        b{
+            font: 12px/16px "微软雅黑";
+        }
+    }
+    div{
+        margin: 20px 0;
+        width: 220px;height: 70px;
+        a{
+            float: left;
+            margin-right: 10px;
+        }
+    }
+}
+.cont_left{
+    float: left;
+    width:418px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    @include boxShadow(0,0,8px,#ccc);
+    h3{
+        height: 62px;width: 378px;
+        border-bottom: 1px solid #ccc;
+        padding: 0 20px;
+        font: 24px/62px "微软雅黑";
+        color: #555;
+        span{
+            float: right;
+            font: 12px/62px "微软雅黑";
+            a{
+                font-weight: 600;
+                color: #333333;
+            }
+            a:hover{
+                color: $hoverColor;
+            }
+        }
+    }
+    form{
+        width: 378px;
+        padding: 15px 20px 20px 24px;
+        ul{
+            width: $full;
+            li{
+                width: $full;
+                color: $colorRed;
+                height: 34px;
+                font: 12px/34px "微软雅黑";
+                position: relative;
+            }
+            li:nth-of-type(1){
+                padding-bottom: 12px;
+            }
+        }
+        input[type="submit"]{
+            padding: 6px 20px;
+            background-color: #D81E27;
+            border: 1px solid #AF0911;
+            color: #fff;
+            @include boxShadow(0,1px,1px,rgba(100,100,100,0.5));
+            text-shadow: 0 -1px #83000B;
+            border-radius: 2px;
+            font-size: 18px;
+            margin-left: 95px;
+        }
+    }
+}
+.cont_left ul li{
+    em{
+        color: #444;
+        display: inline-block;
+        width: 60px;
+        font-style: normal;
+    }
+    input{
+        height: 16px;width: 190px;
+        padding: 8px;
+        color: #333;
+        margin-right: 8px;
+        border: 1px solid #eee;
+        border-top-color: #ccc;
+        @include boxShadow(0,1px,3px,rgba(200,200,200,.3));
+    }
+    b{
+        display: none;
+        position: absolute;
+        width: auto;height: 20px;
+        padding:0 6px;
+            margin: 13px 0;
+        @include boxShadow(0,0,3px,#E08888);
+        background: #FFFCEF;
+        font: 12px/20px "微软雅黑";
+    }
+    i{
+        display: inline-block;
+        width: 20px;height: 13px;
+        margin-left: -32px;
+        background: url(../img/sj_bg.png) -92px -178px no-repeat;
+    }
+    p{
+        height: 16px;
+        padding-left: 70px;
+        span{
+            float: left;
+            background: #d6d3d3;
+            width: 62px;height: 4px;
+            margin-top: 6px;
+            margin-left: 5px;
+            font-size: 0px;
+        }
+        strong{
+            float: left;
+            width: 62px;height: 16px;
+            font:12px/16px "微软雅黑";
+            color: #b0adad;
+            text-align: center;
+            margin-left: 5px;
+        }
+    }
+    p:first-of-type{
+        height: 10px;
+        margin-top: 7px;
+    }
+    label{
+        height: 16px;
+        line-height: 16px;
+        color: #333;
+        margin-left: 75px;
+        em{
+            width: auto;
+            color: $hoverColor;
+        }
+        input{
+            @include clearAll;
+            width: 13px;height: 13px;
+            vertical-align: text-bottom;
+            margin-right: 5px;
+        }
+    }
+}

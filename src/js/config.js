@@ -1,0 +1,28 @@
+require.config({
+	//js的根目录
+	sbaseUrl:"../../js",
+	//每个文件的模块
+	paths:{
+		"jquery":"lib/jquery-1.11.3",
+		"cookie":"lib/jquery.cookie",
+		"highcharts":"plug/highcharts",
+		"swiper":"plug/swiper.min",
+		"banner":"js/banner",
+		"header":"js/header",
+		"footer":"js/footer",
+		"home":"js/home",
+		"bracelet":"js/bracelet",
+		"detail":"js/detail",
+		"shopcart":"js/shopcart",
+		"login":"js/login"
+	},
+	//非AMD文件的模块
+	shim:{
+		highcharts:{
+			//需要依赖的模块
+			deps:["jquery"],
+			//需要暴露的类名
+			exports:"Highcharts"
+		}
+	}
+})
